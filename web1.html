@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="p1.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+#con {
+  background-color: #f1f1f1;
+  width: 750px;
+  border: 1px solid black;
+  padding-left: 50px;
+  margin-left: 100px;
+}
+.container1{
+  padding-top: 5%;
+	padding-right:25%;
+	padding-left: 25%;
+	padding-bottom: 5%;
+	text-align:center;
+	}
+	.container2{
+	padding-top: 5%;
+	padding-right:25%;
+	padding-left: 25%;
+	padding-bottom: 5%;
+	text-align:center;
+	}
+	.formdiv{
+
+	padding-right:15%;
+	padding-left: 30%;
+}
+	.form-control{
+	border:none;
+	}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2f3238;
+  color: white;
+  transform: rotateY(180deg);
+  text-align:centre;
+  padding-top:30%;
+  
+}
+.di {
+    height: 400px;
+    
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position:fixed;
+  z-index: 1;
+  top:0;
+  overflow-x: hidden;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+
+  h2{
+  color:black;
+  font-family: cursive;
+  }
+  body{
+  background: #f1f1f1;
+  }
+  p{
+  font-size: 20px;
+  color: black;
+  }
+  hr{
+  border: 5px solid black;
+  margin-left: 60px;
+  margin-right: 60px;
+  }
+  .formdiv{
+
+	padding-right:15%;
+	padding-left: 5%;
+}
+  </style>
+  <style>
+#more {display: none;}
+</style>
+  <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</head>
+<body style="background-color:#f1f1f1;">
+<header>
+ <img src="ctf.jpg" display="inline" align="left" height="100" width="100">
+ <img src="k.jpg" display="inline" align="right" height="100" width="100">
+  <h1>Xceed and K!arnival</h1>
+
+ </header>
+
+
+<div class="outer" style="padding-left:5%; padding-right:5%;">
+  <div class="about">
+ <div class="ab">
+ <br>&nbsp; &nbsp; &nbsp;
+ <b>About XCEED </b><br>
+ <br>
+ <div class="ab">
+ <div class="con">
+ <b><br>“Distance never stopped goals”<br><br> </b>
+ </div>
+ <div class="cont">
+ Xceed, the forerunner of kurukshetra excellently performs the duty of crusading to carry extravagantly the pride of kurukshetra nationwide. We mainly focus on outstretching to the other side of the country consisting of students and corporate companies to guide standard participation to kurukshetra. Xceed conducts many fascinating events and marvelous workshops organized by the enthusiastic team of CEG Tech Forum. The winners gain a pathway to showcase their caliber and qualities at the finale stage of kurukshetra.
+ <span id="dots">...</span>
+ <span id="more">
+ <p><br><b>OBJECTIVES</b><br><br>
+<ul><li><b>NATIONAL</b><br><br>
+<p>&nbsp; &nbsp;Xceed being the precursor of Kurukshetra is conducted in various colleges across the country. The bot building, coding & technical events are the tip of the ice berg of the spectacle that is to occur . These events test the technical, analytical, statistical and coding skills of the participants. 
+</p><p>&nbsp; &nbsp;Xceed also features an extensive line-up of interactive work-shops that help students enrich their technical and managerial skills and also nurture an individual’s holistic development. 
+</p></li>
+<br><li><b>CORPORATE</b><br><br>
+&nbsp; &nbsp;Corporate XCEED is the latest brain child of the XCEED team to explore new uncharted lands pushing the boundaries of Kurukshetra. This novel pursuit features general, technical and managerial events being conducted in various corporate pavilions across the city. Kurukshetra is the only tech-fest to conduct events among corporates grade symbolizing its excellent corporate relationship and network. It provides an equal opportunity to both the students and corporates to benefit mutually from their knowledge and experience.
+</p></li>
+</ul>
+</span>
+<button onclick="myFunction()" id="myBtn" class="butto">Read more</button>
+
+
+
+</div>
+
+
+
+</div>
+<br>
+<div class="buto"><button class="but">Register</button></div>
+</div>
+</div>
+           
+</div>
+<div class="outer">
+<div class="ft">  
+Know more : <a href="some.pdf" color="pink" download> Xceed brochure </a><br><br>
+</div>
+</div>
+<hr style="border:1px solid black; margin-left: 60px;
+  margin-right: 60px;">
+<div class="outer">
+<div class="container text-center">    
+  <h2>Events</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="coding.jpg" class="img-responsive" alt="Coding" style="width:100%; height:100%">
+    </div>
+    <div class="flip-card-back">
+      <h3>K!odoholic</h3> 
+	  <p style="color:white">"Challenge your limits"</p> 
+    </div>
+  </div>
+</div>
+	  <br><p style="font-size:20px; padding-right:60px;">Coding event</p>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="manager.jpg" class="img-responsive" alt="management" style="width:100%; height:100%">
+    </div>
+    <div class="flip-card-back">
+      <h3>Marketing K!raze</h3>
+	  <p style="color:white">"Unleash the manager in you"</p> 
+    </div>
+	</div>
+</div>
+     <br> <p style="font-size:20px; padding-right:60px;">Management Event</p>    
+    </div>
+    <div class="col-sm-4">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="cad.jpg" class="img-responsive" alt="modeling" style="width:100%; height:100%">
+    </div>
+    <div class="flip-card-back">
+      <h3>CAD mania</h3>
+	  <p style="color:white">"Redefine your imagitivy"</p> 
+    </div>
+  </div>
+</div>
+     <br> <p style="font-size:20px; padding-right:60px;">CAD Modelling</p>    
+    </div>
+  </div>
+</div><br><br>
+<div class="container text-center">    
+  <h2>Workshops</h2><br><br>
+  <div class="row">
+    <div class="col-sm-4">
+	<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ml.jpg" class="img-responsive" alt="Coding" style="width:100%; height:100%">
+    </div>
+    <div class="flip-card-back">
+	  <p style="color:white">Interested in Machine Learning!</p>
+      <button style="width:40% ; height:20% ; background-color:blue ; border-radius:25px ; border:none" >Register</button>
+    </div>
+  </div>
+</div>
+      <br> <p style="font-size:20px; padding-right:60px;">Machine Learning</p>
+    </div>
+    <div class="col-sm-4"> 
+     	<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img.jpg" class="img-responsive" alt="Image Processing" style="width:100%; height:100%">
+    </div>
+    <div class="flip-card-back">
+	  <p style="color:white">Interested in Image Processing!</p>
+      <button style="width:40% ; height:20% ; background-color:blue ; border-radius:25px ; border:none" >Register</button>
+    </div>
+  </div>
+</div>
+      <br><p style="font-size:20px; padding-right:60px;">Image Processing</p>    
+    </div>
+    <div class="col-sm-4">
+      	<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="gitlin.jpg" class="img-responsive" alt="Linux&Github" style="width:100%; height:100%">
+    </div>
+    <div class="flip-card-back">
+	  <p style="color:white">Learn github with Linux</p>
+      <button style="width:40% ; height:20% ; background-color:blue ; border-radius:25px ; border:none" >Register</button>
+    </div>
+  </div>
+</div>
+      <br><p style="font-size:20px; padding-right:60px;">Linux and Github</p>    
+    </div>
+  </div>
+</div>
+</div><br>
+<hr style="border:1px solid black; margin-left: 60px;
+  margin-right: 60px;">
+<div class="outer">
+<div class="container">
+<div class="row">
+    <div class="col-sm-6">
+	<h2> Previous Venues</h2>
+      <img src="m.jpg" class="img-responsive" width="900"  height="900" alt="Image">
+    </div>
+    <div class="col-sm-6"> 
+      <h2 align="center">XCEED SO FAR</h2><br>
+    <h3 style="padding-left:50px">Previous  editions  of  Xceed  include </h3><br>
+    <ul style="padding-left:70px; font-size:20px"><li>IIT,Kharagpur</li>
+        <li>IIT,Kanpur</li>
+        <li>NIT ,Trichy</li>
+        <li>NIT,Warranga</li>
+        <li>NIT,Calicut</li>
+        <li>BITS,Pilani</li>
+        <li>College of Engineering, Pune.</li>
+        <li>RVC,BangaloreNinjacart,Bangalore</li>
+        <li>IIT,Tirupati</li>
+        <li>GCT,Coimbatore </li>
+        <li>VIT,Vellore</li>
+        <li>Sastra,Tanjore</li>
+        <li>TCE,Madurai</li>
+        <li>Freshworks, Chennai</li></ul>
+    </div>
+</div>
+</div>
+<br>
+<hr style="border:1px solid black;">
+</div>
+<div class="outer" style="padding-top:0px">
+<div class="container" >
+<div class="row" >
+<h2 align="center" >Upcoming XCEED</h2>
+    <div class="col-sm-6">
+      <img src="m.jpg" class="img-responsive" width="900"  height="900" alt="Image">
+    </div>
+    <div class="col-sm-6"> <p style="font-size:20px; padding-top:200px;">
+     <br> Venue: <br>Bannari Amman Institute of Technology, Sathyamangalam<br>
+<br>Date:<br> 20/12/19</p>
+
+    </div>
+</div>
+</div>
+<hr style="border:1px solid black;">
+<br>
+<br>
+</div>
+<div class="outer">
+<div class="container text-center">    
+  <h2>K!arnival</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="sci.jpg" class="img-responsive" style="width:100%; height:200px" alt="Image">
+      <br><p>Science Exhibition</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="dr.jpg" class="img-responsive" style="width:100%; height:100%" alt="Image">
+     <br> <p>DRDO Exhibition</p>    
+    </div>
+    <div class="col-sm-4">
+      <img src="3d.jpg" class="img-responsive" style="width:100%; height:200px" alt="Image">
+     <br> <p>3D painting</p>    
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="thr.jpg" class="img-responsive" style="width:100%; height:100%" alt="Image">
+     <br> <p>Laser Tag</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="tram.jpg" class="img-responsive" style="width:100%; height:100%" alt="Image">
+      <br><p>Trampoline</p>    
+    </div>
+    <div class="col-sm-4">
+      <img src="fo.jpg" class="img-responsive" style="width:100%; height:240px" alt="Image">
+      <br><p>VR</p>    
+    </div>
+  </div>
+</div><br>
+
+<hr style="border:1px solid black;">
+<br>
+<div class="outer">
+<div class="container1">
+  <h2 style="padding-left=15%">Registration</h2>
+  <br>
+  <form action="/action_page.php">
+  <div class="form-group">
+      <input type="name" class="form-control" id="name" placeholder="Enter your name" name="name">
+    </div>
+    <br>
+    <div class="form-group">
+     
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+	<br>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <br>
+	<div class="form-group">
+      <input type="password" class="form-control" id="pwd1" placeholder="Repeat password" name="pwd1">
+    </div>
+    <br>
+	<div class="form-group">
+      <input type="text" class="form-control" id="year" placeholder="Enter year" name="year">
+    </div>
+    <br>
+	<div class="form-group">
+      <input type="text" class="form-control" id="college" placeholder="Enter your college name" name="college">
+    </div>
+    <br>
+	<div class="form-group">
+      <input type="text" class="form-control" id="phone" placeholder="Enter your contact number" name="contact">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-default" style=" width: 100px; border-radius: 25px; background-color:blue; color:white;">Register</button>
+  </form>
+</div>
+</div>
+<hr style="border:1px solid black;">
+
+<div class="outer" style="padding-left:130px; padding-right:160px;">
+<h2 align="center">Payment</h2>  
+<div class="formdiv">
+  <form>
+  <br>
+  <label>Email</label><br><br>
+  <input type="email" placeholder="Enter your mail id" style="border-left:none; background-color:#f1f1f1; border-right:none; width:500px; border-top:none; border-bottom:2px solid black;"><br><br>
+  <p>This mail id will be used for confimation</p>
+  </div>
+<div class="container2">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" background-color="gray">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="width:500px; height:500px; background-color:gray; text-align:center">
+      <div class="item active" style="text-align:center;">
+	  <h2>GPay</h2>
+        <img src="qr.png" alt="Gpay" style="width:300px; height:300px; padding-left:175px; padding-top:150px">
+      </div>
+
+      <div class="item" style="text-align:center;">
+	  <h2>Paytm</h2>
+        <img src="qr.png" alt="Paytm" style="width:300px; height:300px; padding-left:175px; padding-top:150px">
+      </div>
+    
+      <div class="item" style="text-align:center;">
+	  <h2>GPay</h2>
+        <img src="qr.png" alt="Pay3" style="width:300px; height:300px; padding-left:175px; padding-top:150px">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+<hr style="border:1px solid black;">
+<div class="outer" style="padding:100px">
+<div id="con">
+	<h3 style="padding-left:255px"><u>Contact Us</u></h3>
+	<h5><u>Mail Us at</u></h5>
+	<a href="#">xceedctf2020@gmail.com</a>
+	<br>
+	<h5><u>Student Directors</u></h5>
+	<pre style="border:none; background-color:#f1f1f1;"> Aishwarya S						KaniMuhilan D</pre>
+			
+	<pre style="border:none; background-color:#f1f1f1;"> 8248884996						9791243897</pre>
+		  
+	<pre style="border:none; background-color:#f1f1f1;"> aishwaryavalli51@gmail.com			        kanimuhilan007@gmail.com</pre>
+	<br>
+</div>
+</div>
+<hr style="border:1px solid black;">
+
+</body>
+</html>
